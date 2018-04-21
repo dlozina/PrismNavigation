@@ -23,5 +23,14 @@ namespace PrismTemplateTest
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;
             //moduleCatalog.AddModule(typeof(YOUR_MODULE));
         }
+
+        protected override void ConfigureContainerBuilder(ContainerBuilder builder)
+        {
+            base.ConfigureContainerBuilder(builder);
+            // All the pages for navigation need to be defined in Bootstrapper
+            builder.RegisterTypeForNavigation<MainPage>("MainPage");
+            builder.RegisterTypeForNavigation<LeftMenuContent>("LeftMenuContent");
+            builder.RegisterTypeForNavigation<RightMenuContent>("RightMenuContent");
+        }
     }
 }

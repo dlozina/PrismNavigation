@@ -5,6 +5,25 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <!--ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/-->
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftMenuRegion"/>
+            <ContentControl Grid.Column="1" prism:RegionManager.RegionName="RightMenuRegion"/>
+        </Grid>
+
+        <!--ContentControl prism:RegionManager.RegionName="ContentRegion" /-->
     </Grid>
 </Window>
