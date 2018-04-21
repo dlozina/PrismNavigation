@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismTemplateTest", "PrismTemplateTest\PrismTemplateTest.csproj", "{0E9DE1F6-23E5-42FC-8903-D8C8B9BD5AF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E9DE1F6-23E5-42FC-8903-D8C8B9BD5AF2}.Debug|x86.ActiveCfg = Debug|x86
+		{0E9DE1F6-23E5-42FC-8903-D8C8B9BD5AF2}.Debug|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F0E846A-9D85-4904-B9DF-6BFE1C595E7F}
+	EndGlobalSection
+EndGlobal
